@@ -1,6 +1,6 @@
 # 🖥️ Home Server & Network Infrastructure
 
-> **Portfolio Project** — Full-stack home lab design covering virtualisation, CCTV/NVR, structured cabling, firewall security, and WiFi infrastructure.
+> ** Full-stack home network design covering virtualisation, CCTV/NVR, structured cabling, firewall security, and WiFi infrastructure **
 
 ---
 
@@ -74,7 +74,7 @@ Patch Panel  PoE SW  Proxmox  WiFi AP1  WiFi AP2
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Tech Stack
 
 `Proxmox VE` `OPNsense` `Frigate NVR` `Home Assistant` `Pi-hole` `WireGuard`
 `Nginx Proxy Manager` `Grafana` `InfluxDB` `Prometheus` `Vaultwarden` `Nextcloud`
@@ -105,5 +105,3 @@ home-server-portfolio/
 ```
 
 ---
-
-> **Version:** 1.0 | **Date:** February 2026 | **Type:** Home Lab / IT Portfolio
