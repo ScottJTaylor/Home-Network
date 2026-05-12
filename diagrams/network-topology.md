@@ -80,7 +80,7 @@ graph TD
 
 ```mermaid
 gantt
-    title Home Lab Build Phases
+    title Home Network Build Phases
     dateFormat  X
     axisFormat  Phase %s
 
