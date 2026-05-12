@@ -1,6 +1,6 @@
 # 🖥️ Home Server & Network Infrastructure
 
-> ** Full-stack home network design covering virtualisation, CCTV/NVR, structured cabling, firewall security, and WiFi infrastructure **
+> Full-stack home network design covering virtualisation, CCTV/NVR, structured cabling, firewall security, and WiFi infrastructure
 
 ---
 
