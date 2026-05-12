@@ -2,7 +2,7 @@
 
 ## Hypervisor — Proxmox VE
 
-**Proxmox VE** is the recommended hypervisor for this build:
+**Proxmox VE** is the hypervisor for this build:
 
 - Free and open source (Debian-based)
 - Supports both **LXC containers** (lightweight) and **KVM virtual machines** (full isolation)
