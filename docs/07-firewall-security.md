@@ -2,16 +2,15 @@
 
 ## Firewall Platform
 
-**OPNsense** running on a dedicated mini PC (e.g., Protectli Vault FW4B or Beelink mini PC).
+**OPNsense** running on a dedicated mini PC.
 
 The ISP modem **must be set to bridge mode** — OPNsense handles all routing, NAT, DNS, and traffic rules.
 
 | Option | Type | Approx. Cost | Notes |
 |---|---|---|---|
-| OPNsense on mini PC | Software + hardware | $150–$200 | **Recommended** — full control, IDS/IPS, VPN |
-| pfSense on mini PC | Software + hardware | $150–$200 | Strong alternative to OPNsense |
-| UniFi Dream Machine | Appliance | $180–$380 | Easy UI — best in UniFi ecosystem |
-| Firewalla Gold | Appliance | $170–$220 | Simple, plug-and-play home option |
+| OPNsense on mini PC | Software + hardware | full control, IDS/IPS, VPN |
+| UniFi Dream Machine | Appliance | Easy UI — best in UniFi ecosystem |
+| Firewalla Gold | Appliance | Simple, plug-and-play home option |
 
 ---
 
@@ -89,7 +88,7 @@ Remote Device (phone/laptop)
 ## IDS/IPS — Suricata
 
 Enable the **Suricata** plugin in OPNsense:
-- Inspects traffic on the WAN interface (and optionally internal VLANs)
+- Inspects traffic on the WAN interface (and internal VLANs)
 - Uses community rule sets (ET Open, Snort VRT)
 - Blocks known malicious IPs, exploit attempts, and C2 traffic
 - Logs all alerts — pipe to Grafana for dashboarding
@@ -120,6 +119,4 @@ Enable the **Suricata** plugin in OPNsense:
 
 ## Out-of-Band Management — PiKVM
 
-A **PiKVM** (~$130–$170 built on Raspberry Pi) provides remote keyboard, video, and mouse access to the server even if the OS is completely frozen or mid-boot.
-
-Essential if the server is located in a garage, utility room, or anywhere not immediately accessible.
+A **PiKVM** (built on Raspberry Pi) provides remote keyboard, video, and mouse access to the server even if the OS is completely frozen or mid-boot.
