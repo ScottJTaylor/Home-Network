@@ -1,0 +1,25 @@
+# Home Server Portfolio — .gitignore
+
+# Never commit secrets or credentials
+*.key
+*.pem
+*.crt
+secrets/
+credentials/
+.env
+.env.*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+tmp/
+temp/
+*.tmp
