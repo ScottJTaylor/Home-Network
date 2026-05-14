@@ -1,6 +1,6 @@
 # 01 — Architecture Overview
 
-## Network Topology
+## 🌐 Network Topology
 
 ```
 ISP Modem (Bridge Mode)
@@ -22,7 +22,7 @@ ISP Modem (Bridge Mode)
 
 ---
 
-## VLAN Design
+## 💠VLAN Design
 
 | VLAN | Subnet | Purpose | Internet Access | Inter-VLAN |
 |------|--------|---------|----------------|------------|
@@ -34,7 +34,7 @@ ISP Modem (Bridge Mode)
 
 ---
 
-## WiFi SSID → VLAN Mapping
+## 🛜 WiFi SSID → VLAN Mapping
 
 | SSID | VLAN | Purpose |
 |------|------|---------|
@@ -44,7 +44,7 @@ ISP Modem (Bridge Mode)
 
 ---
 
-## Traffic Flow Rules
+## 🚦 Traffic Flow Rules
 
 ### Camera Traffic
 ```
@@ -70,7 +70,7 @@ Guest (VLAN 50) → Any internal VLAN                  ❌ BLOCKED
 
 ---
 
-## Key Design Principles
+## 📓 Key Design Principles
 
 1. **Security by default** — firewall denies all inter-VLAN traffic unless explicitly permitted
 2. **Camera isolation** — VLAN 20 has a hard block on internet and LAN access; cameras cannot exfiltrate data
