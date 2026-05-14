@@ -1,11 +1,11 @@
 # 03 — Virtualisation Stack
 
-## Hypervisor — Proxmox VE
+## 🖥️ Hypervisor — Proxmox VE
 
 **Proxmox VE** is the hypervisor for this build:
 
 - Free and open source (Debian-based)
-- Supports both **LXC containers** (lightweight) and **KVM virtual machines** (full isolation)
+- Supports both **Docker containers** and **KVM virtual machines**
 - Clean web UI for management
 - Native ZFS integration
 - Snapshot and backup support built in
@@ -13,9 +13,9 @@
 
 ---
 
-## Container Service Stack
+## 🧰 Container Service Stack
 
-All services run as LXC containers or Docker containers within a Proxmox LXC, managed via Portainer.
+All services run as Docker containers within a Proxmox LXC, managed via Portainer.
 
 | Container | Purpose | Notes |
 |---|---|---|
@@ -36,7 +36,7 @@ All services run as LXC containers or Docker containers within a Proxmox LXC, ma
 
 ---
 
-## Service Architecture
+## 🏠 Service Architecture
 
 ```
                     ┌──────────────────────┐
@@ -64,7 +64,7 @@ Backup:      Duplicati / Restic → Backblaze B2
 
 ---
 
-## Proxmox Snapshot Strategy
+## 🧠 Proxmox Snapshot Strategy
 
 | Trigger | Action |
 |---|---|
@@ -77,7 +77,7 @@ Backup:      Duplicati / Restic → Backblaze B2
 
 ---
 
-## Resource Allocation (Baseline — 32GB RAM)
+## 💾 Resource Allocation (Baseline — 32GB RAM)
 
 | Container | vCPU | RAM | Storage |
 |---|---|---|---|
