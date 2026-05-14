@@ -2,7 +2,7 @@
 
 The server is the core of the infrastructure, running Proxmox VE to host all containers and virtual machines.
 
-## Component List
+## 🖥️ Component List
 
 | Component |  |
 |---|---|
@@ -19,7 +19,7 @@ The server is the core of the infrastructure, running Proxmox VE to host all con
 
 ---
 
-## Key Hardware Notes
+## 📓 Key Hardware Notes
 
 ### IOMMU / PCIe Passthrough
 Enable IOMMU in BIOS to allow PCIe device passthrough to VMs. Required since passing through a NIC directly to a VM.
@@ -39,7 +39,7 @@ Use **ZFS** as the Proxmox storage backend:
 
 ---
 
-## Drive Layout
+## 💾 Drive Layout
 
 ```
 /dev/nvme0n1  →  250GB  →  Proxmox OS
